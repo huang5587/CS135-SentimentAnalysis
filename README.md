@@ -1,8 +1,13 @@
-Contents
+# Sentiment Analysis on Online Customer Reviews
 
-* `data_reviews`: train/test data
-    * x_train.csv : Each row is a training set example, contains raw text of a review observed on a website, as well as the name of the website (amazon, yelp, imdb)
-    *  y_train.csv : Binary sentiment labels (1 = positive, 0 = negative) for each review in x_train
-    * x_test.csv : Each row is a test set example, contains raw text of a review observed on a website, as well as the name of the website (amazon, yelp, imdb)
-* `load_train_data.py`: sample code to load data
+This repositry contains the data and code for a sentiment analysis conducted on online customer reivews. I trained 3 models (Logistic Regression, Nerual Network and SVM). Of the three, the logisitic regression model performed the best with an accuracy score of ~83%
 
+## Process
+
+In order to increase data reliability, I implemeneted the common pre-processing steps of tokenization, removal of punctuation and stop words, converting to lowercase and stemming. 
+
+Before training my models I used a five-fold cross validation via ntlk's GridSearchCV. GridSearchCV also helped to identify the optimal parameters and their optimal values. 
+
+## Improvements
+
+If I were to repeat this exploration again, I would consider using a larger data set. In addition, in order to save time I kept some of the parameter ranges quite limited. If I had more computing resources and time available, I would certainly expand the parameter ranges and create more models to more deeply investigate the effectiveness of each type of model. 
