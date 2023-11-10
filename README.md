@@ -1,6 +1,6 @@
 # Sentiment Analysis on Online Customer Reviews
 
-This repositry contains the data and code for a sentiment analysis conducted on online customer reivews. I trained 3 models (Logistic Regression, Nerual Network and SVM). Of the three, the logisitic regression model performed the best with an accuracy score of ~83%
+This repositry contains the data and code for a sentiment analysis conducted on online customer reivews. I trained 3 models (Logistic Regression, Neural Network and SVM). Of the three, the logisitic regression model performed the best with an accuracy score of ~83%
 
 ## Process
 
